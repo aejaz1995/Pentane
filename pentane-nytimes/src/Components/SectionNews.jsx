@@ -18,7 +18,7 @@ const SectionNews = () => {
   const [article,setArticle]=React.useState("");
   
   const getNewsData =()=>{
-    const url = `https://api.nytimes.com/svc/topstories/v2/${name}.json?api-key=FIggacgleeORGRG2RudGPU94oYeKpAeO`
+    const url = `https://api.nytimes.com/svc/topstories/v2/${name}.json?`
     dispatch( fetchSectionData(url) )
   }
 
