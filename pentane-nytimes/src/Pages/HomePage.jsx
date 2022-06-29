@@ -10,7 +10,7 @@ const HomePage = () => {
 
     React.useEffect(()=>{
         setLoading(true)
-        axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=veI5P7qVillAxFUNbchxr8ijwFGG3M0z`)
+        axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?`)
         .then((res)=>{
             setData(res.data.results)
             setLoading(false)
